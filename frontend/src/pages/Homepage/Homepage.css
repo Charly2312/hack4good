@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 80vw; /* Ensure the app fills the whole viewport */
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 20px;
+  background-color: #fdfaf6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center main content vertically */
+}

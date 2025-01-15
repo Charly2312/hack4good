@@ -5,9 +5,9 @@ import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 //import path from "path";
 
 //creating the supabase client
-const supabaseUrl = "https://uyafgwajiccbvwzjsjep.supabase.co";
+const supabaseUrl = "https://evbrffpvxgoyhaoqrmdn.supabase.co";
 const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV5YWZnd2FqaWNjYnZ3empzamVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY3ODU3MjYsImV4cCI6MjA1MjM2MTcyNn0.Jhelk2ZS3YkQde5F_56FyXWKrp70BunJY3S14rGuagA";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2YnJmZnB2eGdveWhhb3FybWRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc2NTM3OTksImV4cCI6MjAzMzIyOTc5OX0.q-Ww1QoOBekFK0qS4rDUWDDVZ7KOvn1P-Pq205tTsjQ";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const mailerSend = new MailerSend({
@@ -59,6 +59,7 @@ app.post('/send-reset-email', async (req, res) => {
     return res.status(404).json({ message: "Email not found" });
   }
 
+
   const sentFrom = new Sender("ontrack@trial-yzkq340req04d796.mlsender.net", "ontrack");
 
   const recipients = [new Recipient(email, "user")];
@@ -70,6 +71,7 @@ app.post('/send-reset-email', async (req, res) => {
     .setSubject("Reset password link")
     .setHtml("<p>Press the link to reset your password: <link>https://ontrack-orcin.vercel.app/newpassword</link>!</p>")
     .setText("this is the text content");
+
 
   try {
     await mailerSend.email.send(emailParams);
@@ -87,6 +89,8 @@ app.post('/send-feedback', async (req, res) => {
   const { feedback } = req.body;
 
   const sentFrom = new Sender("ontrack@trial-yzkq340req04d796.mlsender.net", "ontrack");
+
+
 
   const recipients = [new Recipient("ontrack.orbital24@gmail.com", "developer")];
 

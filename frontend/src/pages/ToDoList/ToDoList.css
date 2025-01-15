@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: 250px;
+}
+
+.todo-list-main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.completed-tasks-button {
+  background-color: #8aaf93;
+  color: white;
+  border: none;
+  padding: 5px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.completed-tasks-button:hover {
+  background-color: #b8d8c0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #000000;
+}
+
+.canvas-button,
+.link-button {
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.canvas-button:hover,
+.link-button:hover {
+  background-color: #ccc;
+}
+
+/* Day Section */
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.day-section {
+  flex: 1 1 calc(33.333% - 20px); /* Ensure three columns layout with equal spacing */
+  background-color: #efe8d8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-section h2 {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.day-section ul li {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.day-section ul li.completed {
+  background-color: #bed7ba;
+  text-decoration: line-through;
+}
+
+.sort-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sort-options-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+.sort-options-dropdown button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  color: black;
+}
+
+.sort-options-dropdown button:hover {
+  background-color: #f5f5f5;
+}
+
+.task-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Modal */
+/* Modal styling */
+/* Modal styling */
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-content textarea {
+  resize: vertical;
+}
+
+.modal-content button {
+  position: relative;
+  margin-left: 25px;
+  background-color: #88c0a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #a6c1b5;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Footer */
+footer {
+  margin-top: 20px;
+}
+
+/* Task Details */
+.task-details {
+  margin-top: 10px;
+}

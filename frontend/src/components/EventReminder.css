@@ -1,0 +1,76 @@
+.event-reminder-container {
+  width: 100%;
+  height: 400px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #8daba7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.calendar-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  width: 14.28%;
+  text-align: center;
+  padding: 5px;
+}
+
+.calendar-table .disabled {
+  color: #ddd;
+}
+
+.calendar-table .today {
+  background-color: #eaab68;
+  border-radius: 50%;
+}
+
+.event-list {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.event-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: -6px;
+  padding: 10px;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+}
+
+.event-time {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-title {
+  color: #4d4d4d;
+}
+
+.no-events {
+  text-align: center;
+  color: #888;
+}

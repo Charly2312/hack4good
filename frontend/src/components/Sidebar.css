@@ -1,0 +1,66 @@
+.sidebar {
+  width: 250px; /* Sets the width of the sidebar */
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  background-color: #000000; /* Sets the background color of the sidebar */
+  color: white; /* Sets the text color inside the sidebar */
+  padding: 20px; /* Adds padding inside the sidebar */
+  height: 100vh; /* Sets the height to be 100% of the viewport height */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  position: fixed; /* Fixes the sidebar to the left of the viewport */
+  top: 0; /* Positions the sidebar at the top */
+  left: 0; /* Positions the sidebar at the left */
+  overflow-y: hidden; /* Adds vertical scrolling if content overflows */
+}
+
+.sidebar-header {
+  display: flex; /* Aligns items in a row */
+  align-items: center; /* Vertically centers the items */
+  margin-bottom: 30px; /* Adds space below the header */
+}
+
+.sidebar-logo {
+  width: 100px; /* Sets the width of the logo */
+  height: 100px; /* Sets the height of the logo */
+  margin-left: -20px; /* Adjusts the left margin of the logo */
+  margin-right: -10px; /* Adjusts the right margin of the logo */
+}
+
+.sidebar-title h2 {
+  font-size: 26px; /* Sets the font size for the title */
+  margin-bottom: 5px; /* Adds space below the title */
+  color: white; /* Sets the text color inside the sidebar */
+}
+
+.sidebar-title p {
+  font-size: 11px; /* Sets the font size for the subtitle */
+  margin-bottom: 0; /* Removes the bottom margin */
+}
+
+.sidebar nav ul {
+  list-style: none; /* Removes the bullet points from the list */
+  padding: 0; /* Removes padding from the list */
+}
+
+.sidebar nav ul li {
+  margin: 15px 0; /* Adds space above and below each list item */
+}
+
+.sidebar nav ul li a {
+  display: flex; /* Aligns items in a row */
+  align-items: center; /* Vertically centers the items */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets the text color for links */
+  font-size: 18px; /* Sets the font size for links */
+  padding: 10px; /* Adds padding inside the links */
+  transition: background-color 0.3s; /* Smoothly transitions the background color on hover */
+}
+
+.sidebar nav ul li a img {
+  width: 24px; /* Sets the width of the icons */
+  height: 24px; /* Sets the height of the icons */
+  margin-right: 10px; /* Adds space to the right of the icons */
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #333; /* Changes the background color on hover */
+}
