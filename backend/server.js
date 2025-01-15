@@ -21,7 +21,7 @@ const PORT = 5000; //react by default uses port 3000. DONT put 3000 here!
 //allowing access to receive request from the frontend react side
 //in this case, only allowing "POST" and "GET" HTTP requests from frontend
 app.use(cors({
-  origin: ["https://ontrack-orcin.vercel.app"],
+  origin: ["https://hack4good-web.vercel.app/"],
   methods: ["POST", "GET"],
   credentials: true
 }));
