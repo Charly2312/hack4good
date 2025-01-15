@@ -48,7 +48,7 @@ const LoginPage = () => {
     <div className="container">
       <div className="info-section">
         <Clock />
-        <p>Stay Ahead, Stay OnTrack.</p>
+        <p>hack4good website.</p>
       </div>
       <div className="login-section">
         <div>
