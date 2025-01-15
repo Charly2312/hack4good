@@ -5,9 +5,9 @@ import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 //import path from "path";
 
 //creating the supabase client
-const supabaseUrl = "https://evbrffpvxgoyhaoqrmdn.supabase.co";
+const supabaseUrl = "https://uyafgwajiccbvwzjsjep.supabase.co";
 const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2YnJmZnB2eGdveWhhb3FybWRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc2NTM3OTksImV4cCI6MjAzMzIyOTc5OX0.q-Ww1QoOBekFK0qS4rDUWDDVZ7KOvn1P-Pq205tTsjQ";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV5YWZnd2FqaWNjYnZ3empzamVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY3ODU3MjYsImV4cCI6MjA1MjM2MTcyNn0.Jhelk2ZS3YkQde5F_56FyXWKrp70BunJY3S14rGuagA";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const mailerSend = new MailerSend({
